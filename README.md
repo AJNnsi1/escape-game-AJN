@@ -1,6 +1,6 @@
 ---ESCAPE-GAME---
 
-étape 1) - cahier des charge
+étape 1) - cahier des charges
 
 étape 2) - créer l'interface du jeu (page d'acceuil, page de jeu, page de fin : php/html)
          - créer les énigmes (js/php)
