@@ -1,0 +1,16 @@
+{
+  background-color: #f9b941;
+}
+
+@font-face {
+        font-family: BonvenoCF;
+        src: url("./Fonts/BonvenoCF-Light.otf");
+}
+
+h1 {
+        padding:20px;
+        background-color:#f9b941;
+        color:black;
+        font-family:Luminari;
+}
+
