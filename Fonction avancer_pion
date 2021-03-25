@@ -1,20 +1,28 @@
 grille = ["B1","B2","B3","B4","0","0","N1","N2","N3","N4"]
-def avancer_pion(grille,index1) :
-    if grille[index1] == "B1" or "B2" or "B3" or "B4" :
-      index = index1 + 1
-      temp = grille[index1]
-      grille[index1] = grille[index]
-      grille[index] = temp
-      return grille
-    elif grille[index1] == "N1" or "N2" or "N3" or "N4" :
-          index = index1 - 1
-          temp = grille[index1]
-          grille[index1] = grille[index]
-          grille[index] = temp
-          return grille
-    else : 
-          print("impossible")
 
-nouvelle_grille = avancer_pion(grille,6)
+def avancer_pion(grille,index) :
+
+  for i in range (1,5) :
+    b = "B" + str(i)
+    n = "N" + str(i)
+    if grille[index] == b :
+      t = grille[index]
+      grille[index] = grille[index + 1]
+      grille[index + 1] = t
+
+      return grille
+
+    elif grille[index] == n :
+      t = grille[index]
+      grille[index] = grille[index - 1]
+      grille[index - 1] = t
+
+      return grille
+
+  if grille[index] == "0" : 
+    
+    return "impossible"
+
+nouvelle_grille = avancer_pion(grille,5)
 
 print(nouvelle_grille)
