@@ -8,9 +8,16 @@
 }
 
 h1 {
-        padding:20px;
+        padding:50px;
         background-color:#f9b941;
         color:black;
         font-family:Luminari;
 }
+
+body {
+         background-color:#f9b941;
+         color:black;
+         font-family:Bookman;
+         
+         
 
