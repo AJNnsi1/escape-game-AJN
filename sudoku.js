@@ -10,4 +10,5 @@ function sudoku(){
        ];
   
      var grille_initiale = [
-       [
+       [2,0,0,0,0,3],
+       [0,0,6,2,0,4
