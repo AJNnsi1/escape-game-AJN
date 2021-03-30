@@ -37,3 +37,41 @@ def coup_valide(grille,index):
 
 
 print(coup_valide("B1",0))
+
+grille_départ = [["B1","B2","B3","B4","0","0","N1","N2","N3","N4"]]
+
+grille = [["B1","B2","B3","B4","0","0","N1","N2","N3","N4"]]
+
+grillr_index = []
+
+def coup_valide(grille,pion):
+    for index in range (len(grille)):
+            
+        if pion = "B1" or "B2" or "B3" or "B4" :
+                  
+            if grille[index + 1] == "0" :
+        
+                return True
+                  
+            elif grille[index + 2] == "0" :
+        
+                return True
+        
+            else : return False
+        
+        elif pion = "N1" or "N2" or "N3" or "N4" :
+                    
+            if grille[index - 1] == "0" :
+        
+                return True
+                  
+            elif grille[index - 2] == "0" :
+        
+                return True
+        
+            else : return False
+                
+        else : return False
+
+
+print(coup_valide(grille,"B1"))
