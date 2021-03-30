@@ -1,26 +1,33 @@
-
-grille_actuelle = [["B1","B2","B3","B4","*","*","N1","N2","N3","N4"]]
-
-liste_pions = (["B1","B2","B3","B4","N1","N2","N3","N4"], ["blanc","blanc","blanc","blanc","noir","noir","noir","noir"])
+grille_actuelle = [["B1","B2","B3","B4","0","0","N1","N2","N3","N4"]]
 
 def coup_valide(pion):
-  for pion in liste_pions :
-    i <= 3
-    y >= 4  # faire en sorte que ce soit les 4 en partant de la fin
-    if pion = liste_pions([i],[i]):
-      return(pion)
+  for pion in grille_actuelle :
+    for p in range (len(grille_actuelle)):
 
-#      for pion in grille_actuelle:
- #       if grille_actuelle[index(pion) + 1] == 
+        if pion == "B1" or "B2" or "B3" or "B4" :
+          if grille_actuelle[ p + 1] == "0" :
 
-#      return True
-    
- #   elif pion = liste_pions([y],[y]):
+            return True
+          
+          elif grille_actuelle[ p + 2] == "0" :
 
+            return True
 
+          else : return False
 
-  #    retun True
+        elif pion == "N1" or "N2" or "N3" or "N4" :
+          if grille_actuelle[ p - 1] == "0" :
 
-   # else : retun False
+            return True
+          
+          elif grille_actuelle[ p - 2] == "0" :
 
-coup_valide("B4")
+            return True
+
+          else : return False
+        
+        else : return False
+      
+      else : return False
+
+print(coup_valide("B1"))
