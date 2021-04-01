@@ -11,6 +11,4 @@ def victoire(index, pions_blancs, pions_noirs):
       print("Réessayez encore! Courage, vous allez y arriver! ☺")
   return victoire'
 
-document.write(pagecode);
-
 </script>
