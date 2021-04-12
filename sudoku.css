@@ -1,17 +1,20 @@
 head {
   font-family: 'Roboto', sans-serif;
   color: black;
+  h1 {
+  background-color: #FFAB73;
+  color: black;
+}
 }
 
 body {
   background-color: #FFAB73;
   color: black;
-}
 
 table {
-  
-
-h1 {
-  background-color: #FFAB73;
-  color: black;
+  column-rule-color: #191970;
+  line-rule-color: #191970;
+  margin-left: 500px;
+  margin-top: 300px;
+}
 }
