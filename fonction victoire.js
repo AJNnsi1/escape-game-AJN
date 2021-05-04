@@ -24,13 +24,7 @@ function victoire(grille_c)
  return victoire;
 }
 
-"""
-  if index[0,1,2,3]==pions_noirs[6,7,8,9] and index[6,7,8,9]==pions_blancs[0,1,2,3]:
-    print("Félicitations! Vous avez réussi cette énigme! On passe à la suivante? ☺")
-  else:
-      print("Réessayez encore! Courage, vous allez y arriver! ☺")
-
 if "button" is clicked:
   return victoire'
-"""
+
 </script>
