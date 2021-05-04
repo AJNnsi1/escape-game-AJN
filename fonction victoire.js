@@ -1,6 +1,8 @@
 <script language="JavaScript">
-gv=["B4","B3"....]
- gc=["B4","B3"....]
+ from 
+ gv=["N1", "N2", "N3", "N4", "0", "0", "B1", "B2", "B3", "B4"]
+ gc=["B1", "B2", "B3", "B4", "0", "0", "N1", "N2", "N3", "N4"]
+
 #pagecode = 'index=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 pions_noirs=["N1", "N2", "N3", "N4"]
 pions_blancs=["B1", "B2", "B3", "B4"]
@@ -8,7 +10,11 @@ pions_blancs=["B1", "B2", "B3", "B4"]
 
 function victoire(grille_c)
 {
-  victoire=false;
+ for gc in range:
+ if gc=gv:
+ victoire=true;
+ else:
+ victoire=false;
   
   return victoire;
 }
