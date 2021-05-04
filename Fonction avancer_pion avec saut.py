@@ -1,73 +1,74 @@
-grille = ["B1", "B2", "B3", "B4", "0", "0", "N1", "N2", "N3", "N4"]
+grille_courante = ["B1", "B2", "B3", "B4", "0", "0", "N1", "N2", "N3", "N4"]
+#grille_courante=grille_depart
 
-
-def avancer_pion(grille, index):
+def avancer_pion(grille_courante, index):
 
     for i in range(1, 5):
       b = "B" + str(i)
       n = "N" + str(i)
 
-      if grille[index] == b:
+      if grille_courante[index] == b:
 
-        if grille[index + 1] == "0" :
+        if grille_courante[index + 1] == "0" :
 
-          t = grille[index]
-          grille[index] = grille[index + 1]
-          grille[index + 1] = t
+          t = grille_courante[index]
+          grille_courante[index] = grille_courante[index + 1]
+          grille_courante[index + 1] = t
 
-          return grille
+          return grille_courante
        
         for i in range(1,5):
           b = "B" + str(i)
           n = "N" + str(i)
 
-          if grille[index + 2] == "0" :
+          if grille_courante[index + 2] == "0" :
 
-           t = grille[index]
-           grille[index] = grille[index + 2]
-           grille[index + 2] = t
+           t = grille_courante[index]
+           grille_courante[index] = grille_courante[index + 2]
+           grille_courante[index + 2] = t
 
-           return grille
+           return grille_courante
 
-          else :
+           else :
 
              return "impossible"
             
-      elif grille[index] == n:
+        elif grille_courante[index] == n:
 
-         if grille[index - 1] == "0" :
+         if grille_courante[index - 1] == "0" :
 
-           t = grille[index]
-           grille[index] = grille[index - 1]
-           grille[index - 1] = t
+            t = grille_courante[index]
+           grille_courante[index] = grille_courante[index - 1]
+           grille_courante[index - 1] = t
 
-           return grille
+           return grille_courante
 
-         else :
+           else :
 
              for i in range(1,5) :
                b = "B" + str(i)
-               n = "N" + str(i)
+                n = "N" + str(i)
 
-               if grille[index - 1] == b or n :
+               if grille_courante[index - 1] == b or n :
 
-                  if grille[index - 2] == "0" :
+                  if grille_courante[index - 2] == "0" :
 
-                    t = grille[index]
-                    grille[index] = grille[index - 2]
-                    grille[index - 2] = t
+                    t = grille_courante[index]
+                    grille_courante[index] = grille_courante[index - 2]
+                    grille_courante[index - 2] = t
 
-                    return grille
+                   return grille_courante
 
-                  else :
+                   else :
 
                      return "impossible"
 
-      if grille[index] == "0":
+     if grille_courante[index] == "0":
 
         return "impossible"
 
 
-nouvelle_grille = avancer_pion(grille, 9)
+nouvelle_grille = avancer_pion(grille_courante, 6)
 
 print(nouvelle_grille)
+#print(Est_victoire(grille_courante))
