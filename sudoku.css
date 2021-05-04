@@ -1,3 +1,8 @@
+.flex-container {
+  display:flex;
+  flex-wrap:wrap;
+}
+
 head {
   font-family: 'Roboto', sans-serif;
   color: black;
