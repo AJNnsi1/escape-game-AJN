@@ -3,12 +3,11 @@
 #pagecode = 'index=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 pions_noirs=["N1", "N2", "N3", "N4"]
 pions_blancs=["B1", "B2", "B3", "B4"]
-<button onclick="this.innerHTML = valider()"> Valider</button>
+<button onclick="this.innerHTML = valider()">Valider</button>
 
 gv=["N1", "N2", "N3", "N4", "0", "0", "B1", "B2", "B3", "B4"]
 from "Fonction avancer_pion avec saut.py":
 grille_courante=[]
-
 
 function victoire(grille_c)
 {
