@@ -5,10 +5,9 @@
     <script type="text/javascript" src="ANIMAUX.js"></script
     <link rel="stylesheet" href="./ANIMAUX.css">
   </head>
-      
   <body>
 
-    <p>Un livre est ouvert sur une table, il donne sur une histoire et en dessous de cette histoire se trouve une illustration qui represente l ordre d arriver des animaux dans une maison. Seulement cette illustration est dechiree et les images se sont melange et il faut les remettre en place et dans le bonne ordre d arrivee des animaux.
+    <p>Un livre est ouvert sur une table, il donne sur une histoire et en dessous de cette histoire se trouve une illustration qui represente l ordre d arriver des animaux dans une maison. Seulement cette illustration est dechiree et les images se sont melange et il faut les remettre en place et dans le bonne ordre d arrivee des animaux.</p>
 
 
     <p>Arrive dans la maison</p><p id="vert" onclick="place_chat()">un chat.</p>
@@ -18,29 +17,35 @@
     <p id="rouge" onclick="place_vache()">la femme du boeuf</p>
     <p> n avait plus de place.</p>
 
-    <table>
+    // le txte qui sert a ranger le tableau
+
+    <table class= "tableau">
       <thead>
           <tr>
-              <th colspan="2">illustration</th>
+              <th colspan="2">illustration :</th>
           </tr>
       </thead>
       <td>
-        <p style="float:left"><img id="LAPIN" src="https://assets.stickpng.com/images/580b57fbd9996e24bc43bca4.png"width="100" height="..." alt="lapin" title="lapin"/></p>
+        <p style="float"><img id="lapin" src="https://assets.stickpng.com/images/580b57fbd9996e24bc43bca4.png"width="100" height="..." alt="lapin" title="lapin"/></p>
       </td>
       <td>
-        <p style="float:left"><img id="VACHE"
+        <p style="float"><img id="vache"
         src="http://assets.stickpng.com/thumbs/585e5b85cb11b227491c33df.png"width="100" height="..." alt="vache" title="vache"/></p>
       </td>
       <td>
-        <p style="float:left"><img id="CHAT"
+        <p style="float"><img id="chat"
         src="http://assets.stickpng.com/images/585ad2e84f6ae202fedf2968.png"width="100" height="..." alt="chat" title="chat"/></p>
       </td>
       <td>
-        <p  style="float:left"><img id="COCHON"
+        <p  style="float"><img id="cochon"
         src="https://i.pinimg.com/originals/8c/9d/a0/8c9da058c0686eccc6290298e3df8678.png"width="100" height="..." alt="cochon" title="cochon"/></p>
       </td>
-    </table>
+    </table> // tableau avec les images qui pourrons (pas tout de suite car j'y arrive pas) être interverti
+
+
 
 
   </body>
+
+  
 </html>
