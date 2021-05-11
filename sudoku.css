@@ -1,3 +1,11 @@
+head {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background: #eb8f34;
+  
+
+}
+
 .flex-container {
   display:flex;
   flex-wrap:wrap;
@@ -6,31 +14,23 @@
 }
 
 .flex-container > div {
-  width: 100px;
-  margin: 10px;
+  width: 500px;
+  margin: 500px;
   text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-
-head {
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  h1 {
-  background-color: #FFAB73;
-  color: black;
-}
+  line-height: 500px;
+  font-size: 500px;
 }
 
 body {
   background-color: #FFAB73;
   color: black;
+}
 
-table {
-  column-rule-color: #191970;
-  line-rule-color: #191970;
-  margin-left: 5000px;
-  margin-top: 5000px;
-  table-align: center;
+.tableau {
+  border: 3px solid #ffffff;
+  border-collapse:collapse;
+  color-border: #ffffff;
+  text-align:center;
+  padding: 10px;
 }
-}
+
