@@ -1,6 +1,7 @@
 ---ESCAPE-GAME---
 
 étape 1) - cahier des charges
+         
          - première énigme - avec les pion n/b : Noah / régles : il faut inverser les emplacement des pions noirs avec ceux des pions blancs - pour ce faire les pion
          peuvent étre d'éplacés d'une cases (si elle est vide) ou sauter par dessus un autre pion peut importe la couleur - seulement les pions blancs ne peuvent aller
          que vers la droite et les pions noirs ne peuvent aller que vers la gauche - si la partie est bloquer il faut recommencer depuis le début de l'énigme
