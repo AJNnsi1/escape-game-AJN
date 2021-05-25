@@ -1,10 +1,14 @@
 head {
-  font-family: "Roboto", sans-serif;
-  color: black;
-  background: #eb8f34;
-  
-
+    font-family: Verdana, Georgia, sans-serif;
+    color: black;
+    background: #eb8f34;
 }
+
+body {
+	font-family:Verdana, Georgia, sans-serif;
+    color: black;
+    background: #eb8f34;
+} 
 
 .flex-container {
   display:flex;
@@ -14,11 +18,11 @@ head {
 }
 
 .flex-container > div {
-  width: 500px;
-  margin: 500px;
+  width: 5000px;
+  margin: 5000px;
   text-align: center;
-  line-height: 500px;
-  font-size: 500px;
+  line-height: 5000px;
+  font-size: 5000px;
 }
 
 body {
@@ -26,11 +30,16 @@ body {
   color: black;
 }
 
-.tableau {
-  border: 3px solid #ffffff;
-  border-collapse:collapse;
-  color-border: #ffffff;
+.table {
+  border: 3px solid black;
+  background-color: #ffffff;
+  border-collapse : collapse;
   text-align:center;
   padding: 10px;
 }
 
+tr, td{
+	border: 1px solid black;
+	padding: 10px
+}
+	
