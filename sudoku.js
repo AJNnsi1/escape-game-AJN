@@ -17,3 +17,15 @@ function sudoku(){
        [4,0,0,0,0,0],
        [0,0,2,5,1,0]
        ]
+     
+var tot = 0;
+for (var i=0; i < table.length;i++) {
+	tot += Number(grille_fin[i]):
+}	
+
+if "button" is clicked:
+if (somme_grille_initiale = 126) {
+	print = "Bravo! Vous avez résolu cette énigme! Voici un autre indice: la lettre A en première position. Vous pouvez passer à la suivante!";
+}   else {
+	print = "Quel dommage! Vous n'avez pas encore réussi cette énigme! Réessayez encore, vous êtes presque au but!"
+	
