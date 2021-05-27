@@ -13,8 +13,6 @@
 
 étape 2) - créer l'interface du jeu (page d'acceuil, page de jeu, page de fin : php/html)
          
-         - créer les énigmes (cahque énigmes donne une lettre qui serviront a former les code secret : js/php)
-         
          - créer les interaction entre la page de jeu et les énigmes
          
          - chrono
