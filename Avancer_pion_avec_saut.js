@@ -1,9 +1,9 @@
-var grille_courante=new Array (); /// création grille
+var grille_courante=new Array (); /// création grillel
+grille_courante[3]="B4"; /// pion blanc
+grille_courante[4]="0";  /// case vide
 grille_courante[0]="B1"; /// pion blanc
 grille_courante[1]="B2"; /// pion blanc
 grille_courante[2]="B3"; /// pion blanc
-grille_courante[3]="B4"; /// pion blanc
-grille_courante[4]="0";  /// case vide
 grille_courante[5]="0";  /// case vide
 grille_courante[6]="N1"; /// pion noir
 grille_courante[7]="N2"; /// pion noir
@@ -13,11 +13,6 @@ grille_courante[9]="N4"; /// pion noir
 
 function avancer_pion(grille_courante,index) { /// donner la grille avec l'index de case sélectionnée
 
-      var a = grille_courante[index];
-      var ab = grille_courante[index + 1];
-      var abc = grille_courante[index + 2];
-      var ba = grille_courante[index - 1];
-      var cba = grille_courante[index - 2];
 
   for (let i = 1;i = 4;i+1){   /// boucle pour obtenir B1,B2,B3,B4,N1,N2,N3,N4
     let b = "B" + String(i);
@@ -29,12 +24,10 @@ function avancer_pion(grille_courante,index) { /// donner la grille avec l'index
       console.log(test);
 
       if (grille_courante[index + 1] == "0") { /// vérifier si case suivante est vide
-        console.log(a);
-        console.log(ab);
-        let t = grille_courante[index] ;/// fonction permuter(avancer pion blanc G->D)
-        var a ;
-        a = ab ;
-        let ab = t ;
+
+        t = grille_courante[index] ;/// fonction permuter(avancer pion blanc G->D)
+        grille_courante[index] = grille_courante[index + 1] ;
+        grille_courante[index + 1] = t ;
 
         return grille_courante /// retourner la grille après mouvement
          }
@@ -43,9 +36,9 @@ function avancer_pion(grille_courante,index) { /// donner la grille avec l'index
         var test = test +1
         console.log(test);
 
-        let t = grille_courante[index]  /// fonction permuter(avancer pion blanc G->D)
-        let a = abc
-        let abc = t
+        t = grille_courante[index]  /// fonction permuter(avancer pion blanc G->D)
+        grille_courante[index] = grille_courante[index + 2]
+        grille_courante[index + 2] = t
 
         return grille_courante   /// retourner grille après mouvement
         } else { /// si case après case suivante=pas vide alors retourner impossible
@@ -57,9 +50,9 @@ function avancer_pion(grille_courante,index) { /// donner la grille avec l'index
 
       if (grille_courante[index - 1] == "0") { /// si case avant le pion noir est vide
         
-        let t = grille_courante[index] /// fonction permuter(reculer le pion noir D->G)
-        let a = ba
-        let ba = t
+        t = grille_courante[index] /// fonction permuter(reculer le pion noir D->G)
+        grille_courante[index] = grille_courante[index - 1]
+        grille_courante[index - 1] = t
 
         return grille_courante  /// retourner la grille après mouvement
 
@@ -71,9 +64,9 @@ function avancer_pion(grille_courante,index) { /// donner la grille avec l'index
               if (grille_courante[index - 1] = b / n) {   /// si case avant pion = pion
                 if (grille_courante[index - 2] = "0"){   /// si case avant la case avant le pion est vide
 
-                  let t = grille_courante[index] /// fonction permuter(reculer pion noir D->G)
-                  let a = cba
-                  let cba = t
+                  t = grille_courante[index] /// fonction permuter(reculer pion noir D->G)
+                  grille_courante[index]= grille_courante[index - 2]
+                  grille_courante[index - 2] = t
 
                   return grille_courante /// retourner la grille après mouvement
                   } else { /// si case avant la case avant le pion noir n'est pas vide
@@ -88,7 +81,6 @@ function avancer_pion(grille_courante,index) { /// donner la grille avec l'index
           return "impossible" }   /// retourner impossible
         }
       }
-
 
 
 var nouvelle_grille = avancer_pion(grille_courante,3)
