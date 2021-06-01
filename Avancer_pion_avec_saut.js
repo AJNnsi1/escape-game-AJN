@@ -1,9 +1,10 @@
 var grille_courante=new Array (); /// création grillel
-grille_courante[3]="B4"; /// pion blanc
-grille_courante[4]="0";  /// case vide
+
 grille_courante[0]="B1"; /// pion blanc
 grille_courante[1]="B2"; /// pion blanc
 grille_courante[2]="B3"; /// pion blanc
+grille_courante[3]="B4"; /// pion blanc
+grille_courante[4]="0";  /// case vide
 grille_courante[5]="0";  /// case vide
 grille_courante[6]="N1"; /// pion noir
 grille_courante[7]="N2"; /// pion noir
@@ -13,13 +14,13 @@ grille_courante[9]="N4"; /// pion noir
 
 function avancer_pion(grille_courante,index) { /// donner la grille avec l'index de case sélectionnée
 
+  for (let i = 0; i < 5; i++) {   /// boucle pour obtenir B1,B2,B3,B4,N1,N2,N3,N4
+    console.log(i);
+    var b = "B" + String(i);
+    var n = "N" + String(i);
 
-  for (let i = 1;i = 4;i+1){   /// boucle pour obtenir B1,B2,B3,B4,N1,N2,N3,N4
-    let b = "B" + String(i);
-    let n = "N" + String(i);
-    console.log(b);
-
-    if (grille_courante[index] == b) { /// vérifier si case sélectionnée = pion blanc
+    if (grille_courante[index] == b) {/// vérifier si case sélectionnée = pion blanc
+  
       var test = 1
       console.log(test);
 
@@ -80,10 +81,10 @@ function avancer_pion(grille_courante,index) { /// donner la grille avec l'index
           if (grille_courante[index] = "0"){  /// si case sélectionnée est vide
           return "impossible" }   /// retourner impossible
         }
-      }
+}
 
 
-var nouvelle_grille = avancer_pion(grille_courante,3)
+var nouvelle_grille = avancer_pion(grille_courante,2)
 
 //var grille_courante = ["B1","B2","B3","B4","0","0","N1","N2","N3","N4"]
 console.log(nouvelle_grille);
